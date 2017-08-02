@@ -59,9 +59,9 @@
     <div class="c-box c-box--emphasis">
       <div class="c-box__inner">
         <ul class="c-list">
-          <li>全角指定の項目は、全角文字で入力してください。</li>
-          <li>半角カナ、特殊文字は文字化けの原因になるので使用しないでください。</li>
-          <li>必須項目は必ず入力してください。入力されないと送信できません。</li>
+          <li>全角指定の項目は、全角文字で入力をお願い致します。</li>
+          <li>半角カナ、特殊文字は文字化けの原因になるので使用不可です。</li>
+          <li>必須項目は必ず入力してください。未入力ですと送信されません。</li>
         </ul>
         <!-- /box__inner -->
       </div>
@@ -69,7 +69,7 @@
     </div>
 
     <div class="c-form">
-      <form name="form1" method="post" action="sendmail.php">
+      <form name="form1" method="post" action="confirm.php">
         <input type="hidden" name="key" value="save">
         <input type="hidden" name="MEM_SEQ_ID" value="">
         <div class="c-form__container">
@@ -218,7 +218,7 @@
               <div class="l-grid">
                 <div class="l-gridL-3 l-gridM-3 l-gridS-3">
                   <div class="c-form__inputText">
-                    <input class="c-form__inputTextItem" type="text" name="EU_TEL1" value="">
+                    <input class="c-form__inputTextItem" type="number" name="EU_TEL1" value="">
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -227,7 +227,7 @@
                 </div>
                 <div class="l-gridL-3 l-gridM-3 l-gridS-3">
                   <div class="c-form__inputText">
-                    <input class="c-form__inputTextItem" type="text" name="EU_TEL2" value="">
+                    <input class="c-form__inputTextItem" type="number" name="EU_TEL2" value="">
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -236,7 +236,7 @@
                 </div>
                 <div class="l-gridL-3 l-gridM-3 l-gridS-3">
                   <div class="c-form__inputText">
-                    <input class="c-form__inputTextItem" type="text" name="EU_TEL3" value="">
+                    <input class="c-form__inputTextItem" type="number" name="EU_TEL3" value="">
                     <!-- /form__inputText -->
                   </div>
                 </div>
