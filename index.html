@@ -69,7 +69,7 @@
     </div>
 
     <div class="c-form">
-      <form name="form1" method="post" action="confirm.asp">
+      <form name="form1" method="post" action="sendmail.php">
         <input type="hidden" name="key" value="save">
         <input type="hidden" name="MEM_SEQ_ID" value="">
         <div class="c-form__container">
@@ -77,11 +77,11 @@
             <dt class="c-form__containerTitle">お問い合わせ項目 <span class="c-form__required">必須</span></dt>
             <dd class="c-form__containerBody">
               <div class="c-form__radio">
-                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="0001"><span class="c-form__radioHidden"></span>映像やVR・Web制作などのお見積がほしい</label>
-                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="0002"><span class="c-form__radioHidden"></span>何か面白そうなので詳しい話を聞いてみたい</label>
-                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="0003"><span class="c-form__radioHidden"></span>各種メディアや講演会などへの出演に関して</label>
-                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="0004"><span class="c-form__radioHidden"></span>ノースアンビシャスと一緒に仕事をしたり働くことに興味がある</label>
-                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="0005"><span class="c-form__radioHidden"></span>ご意見・ご要望</label>
+                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="映像やVR・Web制作などのお見積がほしい"><span class="c-form__radioHidden"></span>映像やVR・Web制作などのお見積がほしい</label>
+                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="何か面白そうなので詳しい話を聞いてみたい"><span class="c-form__radioHidden"></span>何か面白そうなので詳しい話を聞いてみたい</label>
+                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="各種メディアや講演会などへの出演に関して"><span class="c-form__radioHidden"></span>各種メディアや講演会などへの出演に関して</label>
+                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="ノースアンビシャスと一緒に仕事をしたり働くことに興味がある"><span class="c-form__radioHidden"></span>ノースアンビシャスと一緒に仕事をしたり働くことに興味がある</label>
+                <label class="c-form__radioLabel"><input class="c-form__radioItem" type="radio" name="CATE_ID" value="ご意見・ご要望"><span class="c-form__radioHidden"></span>ご意見・ご要望</label>
                 <!-- /form__radio -->
               </div>
             </dd>
@@ -106,8 +106,8 @@
                   <div class="c-form__inputText">
                     <label for="kanjiSei">姓　</label>
                     <span class="c-form__inlineBody">
-  <input id="kanjiSei" class="c-form__inputTextItem" type="text" name="EU_FNAME" value="">
-  </span>
+                    <input id="kanjiSei" class="c-form__inputTextItem" type="text" name="EU_FNAME" value="">
+                    </span>
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -115,8 +115,8 @@
                   <div class="c-form__inputText">
                     <label for="kanjiNa">名　</label>
                     <span class="c-form__inlineBody">
-  <input id="kanjiNa" class="c-form__inputTextItem" type="text" name="EU_LNAME" value="">
-  </span>
+                    <input id="kanjiNa" class="c-form__inputTextItem" type="text" name="EU_LNAME" value="">
+                    </span>
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -133,8 +133,8 @@
                   <div class="c-form__inputText">
                     <label for="kanaSei">セイ</label>
                     <span class="c-form__inlineBody">
-  <input id="kanaSei" class="c-form__inputTextItem" type="text" name="EU_KFNAME" value="">
-  </span>
+                    <input id="kanaSei" class="c-form__inputTextItem" type="text" name="EU_KFNAME" value="">
+                    </span>
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -142,8 +142,8 @@
                   <div class="c-form__inputText">
                     <label for="kanaNa">メイ</label>
                     <span class="c-form__inlineBody">
-  <input id="kanaNa" class="c-form__inputTextItem" type="text" name="EU_KLNAME" value="">
-  </span>
+                    <input id="kanaNa" class="c-form__inputTextItem" type="text" name="EU_KLNAME" value="">
+                    </span>
                     <!-- /form__inputText -->
                   </div>
                 </div>
@@ -156,11 +156,11 @@
             <dd class="c-form__containerBody">
               <div class="c-form__inputText">
                 <span class="c-form__inlineBody">
-  <input class="c-form__inputTextItem" type="text" name="EU_EMAIL" value="">
-  </span>
+                <input class="c-form__inputTextItem" type="text" name="email" value="">
+                </span>
                 <!-- /form__inputText -->
               </div>
-              <p class="c-text attention">携帯電話のメールアドレスではお問い合わせいただくことができません</p>
+
             </dd>
           </dl>
 
