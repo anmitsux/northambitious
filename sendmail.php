@@ -7,7 +7,7 @@ mb_internal_encoding("UTF-8");
 
 //自動返信設定
 $autoreplyTo=$_POST["email"];
-$autoreplyHeader= "From: ". "m.yamaga@miyabi-y.net";
+$autoreplyHeader= "From: ". "yamaolnana@gmail.com";
 $autoreplySubject="［自動送信］お問い合わせ内容の確認｜ノースアンビシャス";
 $autoreplyBody = "この度はお問い合わせいただきまして、誠にありがとうございます。\nお問い合わせつきましては担当者より、あらためてご連絡させていただきます\n\n";
 $autoreplyBody .= "以下お問い合わせ内容となります。\n";
@@ -31,9 +31,9 @@ $autoreplyBody .= "--------------------------------------";
 
 //*環境設定*************************************
 //件名
-$subject = "【お問い合わせ】｜ノースアンビシャス";
+$subject = "【お問い合わせ通知】｜ノースアンビシャス";
 //管理人メールアドレス(宛先)
-$to = "m.yamaga@miyabi-y.net";
+$to = "yamaolnana@gmail.com";
 
 //**********************************************
 
@@ -60,4 +60,6 @@ $body .= "電話番号：" . $_POST["EU_TEL1"] .'-'.$_POST["EU_TEL2"].'-'.$_POST
 
 mb_send_mail($to,$subject,$body,$header);
 mb_send_mail($autoreplyTo,$autoreplySubject,$autoreplyBody,$autoreplyHeader);
+header("Location: /northambitious/complete.html");
+exit;
 ?>
