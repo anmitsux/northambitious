@@ -1,0 +1,79 @@
+/* ============================================================ individual */
+
+/* === layout */
+.mainHeader__mainLogo img { height: auto; }
+.mainFooter__areaB { border-top: none; }
+script + img { display: block; }
+
+/* ƒGƒ‰[‚«o‚µ‚ð‚Â‚¯‚é‚½‚ßAtable‚É•ÏX */
+@media only screen and (min-width: 1025px) {
+  .c-form__containerBody .l-grid { display: table; width: 100%; }
+  .c-form__containerBody .l-grid:before,
+  .c-form__containerBody .l-grid:after { display: none; }
+  .c-form__containerBody [class*="l-gridL"] { display: table-cell; float: none; vertical-align: bottom; }
+}
+
+/* === compornents */
+.c-list li { margin-top: 12px; }
+.c-form--error { display: inline-block; width: 100%; }
+.c-form--error + .l-grid { margin-top: 0; }
+.tel .c-form--error .c-form__errorMessage:after,
+.tel .c-form--error .c-form__errorMessage:before { left: 20%; }
+
+.c-button--L .c-button__reset { padding-left: 15px; padding-right: 15px; }
+body.thanks .c-button > [class*="c-button"] + [class*="c-button"] { margin-left: 32px; }
+
+/* SPŽž‚Íƒ{ƒ^ƒ“‚ð”½“]‚·‚é*/
+.c-button--reverse { margin: 48px auto 0 auto; text-align: left; }
+body.input .c-button--reverse { width: 350px; }
+body.confirm .c-button--reverse { width: 450px; }
+
+.c-button--reverse .c-button__act + .c-button__act { margin: 0; }
+.c-button--reverse .c-button__act:first-child { float: right; }
+
+.c-form__inputText { margin-top: 24px; }
+.c-form__steps li { width: 32.9%; margin: 4px 3px 4px 0; }
+.c-form__steps li.is-current + li em { background-color: #f5f5f5; border-color: #f5f5f5; }
+.c-form__radio .c-form__radioLabel { margin-right: 5px; }
+
+.example,
+.attention { margin-top: 5px; }
+.separate { display: inline-block; width: 100%; font-size: 26px; font-size: 2.6rem; text-align: center; }
+.stepLead { margin-top: 40px; text-align: center; }
+
+.userName {}
+.userName label { font-weight: bold; margin-right: 10px; }
+.userName .c-form__inlineBody { width: 83%; }
+
+.birthDay .c-form__select { display: inline-block; width: 78%; }
+.birthDay .birthDay__text { display: inline-block; margin-left: 10px; }
+
+.zip .l-grid { width: 70%; }
+
+.tel [class*="l-gridL"] { display: table-cell; float: none; vertical-align: bottom; }
+
+.thanksLead { margin: 80px 0 100px 0; }
+.thanksLead .iconComplete { text-align: center; }
+.thanksLead .comment { margin: 40px 0; font-weight: bold; text-align: center; font-size: 18px; font-size: 1.8rem; }
+
+@media only screen and (max-width: 1024px) {
+  .mainFooter__areaB { border-top: 1px solid #e0e0e0; }
+  .userName [class*="l-grid"] + [class*="l-grid"] { margin-top: 10px; }
+  .zip .l-grid { width: 100%; }
+}
+
+@media only screen and (max-width: 640px) {
+  .c-form__steps li { width: 32.3333%; }
+  .c-form__radio .c-form__radioLabel { display: block; }
+  .birthDay [class*="l-grid"] + [class*="l-grid"] { margin-top: 10px; }
+  .birthDay .c-form__select { width: 90%; }
+  .thanksLead { margin: 40px 0 50px 0; }
+  .thanksLead .iconComplete img { width: 40px; height: auto; }
+  .thanksLead .comment { margin: 25px 0; font-size: 14px; font-size: 1.4rem; }
+
+  .c-button > [class*="c-button"] + [class*="c-button"] { margin: 32px 0 0 0; }
+
+  body.input .c-button--reverse,
+  body.confirm .c-button--reverse { width: auto; margin: 32px 0 0 0; }
+  body.thanks .c-button .c-button__act + .c-button__act { margin-left: 0; }
+}
